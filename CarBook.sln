@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontends", "Frontends", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarBook.WebUI", "Frontends\CarBook.WebUI\CarBook.WebUI.csproj", "{39733B08-BFC0-4DEA-9AF4-247528662384}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarBook.Dto", "Frontends\CarBook.Dto\CarBook.Dto.csproj", "{6C282F60-B18D-479A-B594-ADF7F12988C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{39733B08-BFC0-4DEA-9AF4-247528662384}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39733B08-BFC0-4DEA-9AF4-247528662384}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39733B08-BFC0-4DEA-9AF4-247528662384}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C282F60-B18D-479A-B594-ADF7F12988C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C282F60-B18D-479A-B594-ADF7F12988C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C282F60-B18D-479A-B594-ADF7F12988C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C282F60-B18D-479A-B594-ADF7F12988C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +63,7 @@ Global
 		{64D5991F-2CCB-44E7-80B6-EE56E92D0AE9} = {5F5D51C6-8D78-47FE-8335-A9B67CBDFD02}
 		{923EE8EE-D01D-48B3-BF0A-B5266F97858F} = {F3BE5416-4DED-4A16-B5BD-3E614FAFB7EF}
 		{39733B08-BFC0-4DEA-9AF4-247528662384} = {EFC284F7-6A72-499B-A704-FC5DD44722C3}
+		{6C282F60-B18D-479A-B594-ADF7F12988C6} = {EFC284F7-6A72-499B-A704-FC5DD44722C3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {100A6BAC-AB28-45FD-8AF7-72D67E4C15A4}
