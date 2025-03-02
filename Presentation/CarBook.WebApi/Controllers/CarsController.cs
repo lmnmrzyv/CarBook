@@ -63,9 +63,9 @@ namespace CarBook.WebApi.Controllers
             return Ok("About me information has been updated");
         }
         [HttpGet("GetCarWithBrand")]
-        public IActionResult GetCarWithBrand()
+        public async Task<IActionResult> GetCarWithBrand()
         {
-            var values=_getCarWithBrandQueryHandler.Handle();
+            var values=await _getCarWithBrandQueryHandler.Handle();
             return Ok(values);
         }
     }

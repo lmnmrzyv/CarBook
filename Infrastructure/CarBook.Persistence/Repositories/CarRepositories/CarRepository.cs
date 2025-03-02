@@ -1,4 +1,5 @@
-﻿using CarBook.Application.Interfaces.CarInterfaces;
+﻿using CarBook.Application.Features.CQRS.Results.CarResults;
+using CarBook.Application.Interfaces.CarInterfaces;
 using CarBook.Domain.Entities;
 using CarBook.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
@@ -19,10 +20,14 @@ namespace CarBook.Persistence.Repositories.CarRepositories
             _context = context;
         }
 
-        public List<Car> GetCarsListWithBrands()
+        // CarRepository metodunu List<Car> qaytaracaq şəkildə dəyişirik
+        public async Task<List<Car>> GetCarsListWithBrands()
         {
-           var values=_context.Cars.Include(x=>x.Brand).ToList();
-           return values;
+            var values = await _context.Cars
+                .Include(x => x.Brand)  // Brand əlaqəsini daxil edirik
+                .ToListAsync();  // Nəticə asinxron qaytarılır
+
+            return values;  // Car obyektləri qaytarılır
         }
     }
 }
